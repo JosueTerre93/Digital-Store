@@ -5,9 +5,23 @@
       <app-productos></app-productos>
     </mat-grid-tile>
 
+    <!-- RESUMEN PRODUCTOS -->
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      RESUMEN PRODUCTOS
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <hr />
+
+  <mat-grid-list cols="2" rowHeight="300px">
     <!-- INSUMOS -->
     <mat-grid-tile [colspan]="1" [rowspan]="2">
       <app-insumos></app-insumos>
+    </mat-grid-tile>
+
+    <!-- INSUMOS -->
+    <mat-grid-tile [colspan]="1" [rowspan]="2"> 
+      RESUMEN INSUMOS 
     </mat-grid-tile>
   </mat-grid-list>
 </div>

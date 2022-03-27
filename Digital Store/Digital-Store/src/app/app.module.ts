@@ -13,13 +13,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ProductosComponent } from './productos/productos.component';
 import { InsumosComponent } from './insumos/insumos.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ProductosComponent,
-    InsumosComponent
+    InsumosComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,9 +33,12 @@ import { InsumosComponent } from './insumos/insumos.component';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    LayoutModule,
+    MatTableModule,
+    MatDividerModule,
+    MatListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
